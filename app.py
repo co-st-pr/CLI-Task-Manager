@@ -49,8 +49,8 @@ async def root():
 
 
 @app.get("/tasks")
-async def load(file_name):
-    list_tasks(file_name)
+async def load(file_name = file_name):
+    list_tasks(file_name = file_name)
 
 @app.get("/tasks/{task_id}")
 async def load_task(task_id, file_name):
